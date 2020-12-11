@@ -34,17 +34,12 @@ def hirst_painting():
                 boo.penup()
                 boo.forward(8)
             elif game_on == (after_first_round) and game_on < -10 and x >= 7-dot_start and x <= 7+dot_start:
-                if x == 7 and game_on == -20:
-                    boo.penup()
-                    boo.forward(0)
-                    boo.penup()
-                    boo.forward(8)
-                else:
-                    boo.color("red")
-                    boo.pendown()
-                    boo.forward(0)
-                    boo.penup()
-                    boo.forward(8)
+
+                boo.color("red")
+                boo.pendown()
+                boo.forward(0)
+                boo.penup()
+                boo.forward(8)
 
             elif game_on == -10:
                 if x >= 0 and x <= 6:
@@ -101,26 +96,8 @@ def hirst_painting():
                     boo.penup()
                     boo.forward(8)
 
-            elif game_on == 20:
-                if x == 3:
-                    boo.color("red")
-                    boo.pendown()
-                    boo.forward(0)
-                    boo.penup()
-                    boo.forward(8)
-                elif x == 11:
-                    boo.color("red")
-                    boo.pendown()
-                    boo.forward(0)
-                    boo.penup()
-                    boo.forward(8)
-                else:
-                    boo.penup()
-                    boo.forward(0)
-                    boo.penup()
-                    boo.forward(8)
 
-            elif game_on >= 30:
+            elif game_on >= 20:
                 boo.penup()
                 boo.forward(0)
                 boo.penup()
